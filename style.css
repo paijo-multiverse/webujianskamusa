@@ -1,0 +1,86 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh; /* Mengatur body agar mengisi seluruh tinggi layar */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(to right, #4e2a84, #2196f3); /* Gradasi ungu ke biru */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: static;
+}
+
+header h1 {
+  font-size: 1.5rem; /* Ukuran font untuk h1 */
+}
+
+header h2 {
+  font-size: 1rem; /* Ukuran font untuk h2 */
+}
+
+/* Main Section Styles */
+main {
+    background-color: #f9f9f9; /* Warna latar belakang untuk bagian utama */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Memberikan jarak antar balok */
+    flex-grow: 1; /* Mengisi sisa ruang */
+    align-items: center; /* Memastikan balok berada di tengah */
+    overflow-y: auto; /* Membuat konten dapat digulir jika melebihi ukuran */
+}
+
+a {
+  color: #222; /* Memberikan warna hitam pada link */
+  text-decoration: none; /* Menghilangkan dekorasi (garis bawah) */
+  font-size: 1rem; /* Menyesuaikan ukuran font link */
+  display: block; /* Membuat link menjadi block-level, agar memenuhi lebar balok */
+  padding: 10px; /* Memberikan jarak dalam link */
+  border-radius: 5px; /* Menambahkan border-radius untuk sudut yang tumpul */
+  transition: background-color 0.3s ease; /* Animasi perubahan background saat hover */
+  font-weight: bold;
+}
+
+a:active {
+  transform: scale(0.95); /* Efek zoom, memperkecil ukuran link saat diklik */
+}
+
+/* Balok Styles */
+.balok {
+    background-color: #ffffff; /* Warna latar belakang untuk balok */
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Membuat balok mengisi lebar layar dengan margin */
+    max-width: 350px; /* Menetapkan lebar maksimum balok */
+    border-radius: 8px;
+    margin-bottom: 20px; /* Menambahkan margin bawah antar balok */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333333; /* Warna gelap untuk footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 20px; /* Sudut kiri atas tumpul */
+    border-top-right-radius: 20px; /* Sudut kanan atas tumpul */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Menambahkan shadow pada footer */
+}
